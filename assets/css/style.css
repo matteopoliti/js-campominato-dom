@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: sans-serif;
+}
+
+.web-game{
+    height: 100vh;
+    width: 60%;
+    margin: 0 auto;
+}
+
+div header{
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div header .header-left{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    text-transform: capitalize;
+}
+
+div header .header-right #difficulty{
+    padding-right: 80px;
+}
+
+
+div header .header-right #button,
+#ricaricaButton{
+    padding-inline: 30px;
+}
+
+
+div main{
+    height: 80vh;
+    background-color: #7fffd4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div main #griglia{
+    width: 60%;
+    margin: 0 auto;
+    border: 2px solid black;
+    flex-wrap: wrap;
+    display: flex;
+    
+}
+
+.box-beginner{
+    border: 1px solid black;
+    flex-basis: calc( 100% / 10 );
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: black;
+    cursor: pointer;
+}
+
+.box-standard{
+    border: 1px solid black;
+    flex-basis: calc( 100% / 9 );
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: black;
+    cursor: pointer;
+}
+
+.box-hard{
+    border: 1px solid black;
+    flex-basis: calc( 100% / 7 );
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: black;
+    cursor: pointer;
+}
+.container{
+    position: relative;
+}
+.d_none{
+    display: none;
+}
+
+.blue{
+    background-color: #00b7ff;
+    
+}
+.red{
+    background-color: red;
+}
+
+.reloadButton{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+footer{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 30px;
+}
